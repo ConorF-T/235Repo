@@ -1,0 +1,22 @@
+/* It starts completely empty. I wish you luck. */
+
+body {
+    margin: 1 rem;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+        "logo       intro"
+        "menu       menu"
+        "playground playground"
+        "footer     footer";
+        grid-template-columns: [logo] 500px [intro] 1hr [menu] 1hr [playground] 1hr [footer] 1hr;
+        grid-template-rows: [logo-start] 345px [intro] auto [menu] auto [playground] auto [footer] auto;
+}
+
+hi.game { grid-area: logo; }
+ul.menu { grid-area: menu; }
+#introducton { grid-area: intro; }
+#tetgrid { grid-area: playground; }
+footer { grid-area: footer; }
